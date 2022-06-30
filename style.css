@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 235, 227);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    background-color: rgb(240, 235, 227);
+    position: fixed;
+    width: 100%;
+    height: 25%;
+    top:0%
+}
+
+.header p {
+    font-size: 1.5rem;
+    font-family: 'DM Serif Display', sans-serif;
+    color: rgb(87, 111, 114);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.nav {
+    position: absolute;
+    top: 60%;
+    right: 8.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav a {
+    text-decoration: none;
+    margin-bottom: 1em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-top: 1rem;
+    letter-spacing: .01em;
+    text-align: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: rgb(87, 111, 114); 
+}
+
+.nav a:hover {
+    color: rgb(228, 220, 207);
+}
+
+.profilepic {
+    position: relative;
+    width: 100%;
+    height: 17.5em;
+    top: 7em; 
+    /* left: 2.3em; */
+    background-color: rgb(125, 157, 156);
+    z-index: -1
+}
+
+
+.profilepic img {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    left: 6.7rem;
+    top: 1rem;
+    border-radius: 50%;
+}
+
+.profilepic p {
+    text-align: center;
+    padding-top: 12rem;
+    font-size: 1.5rem;
+    color: rgb(43, 55, 56);
+}
+
+.job {
+    text-align: center;
+    font-size: 1.2rem; 
+    color: rgb(43, 55, 56); 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 2em;
+    /* left: 2.3em; */
+    background-color: rgb(228, 220, 207);
+    top: 7em;
+    z-index: -1;
+}
+.socmed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute; 
+}
+
+.socmed img {
+    flex-wrap: wrap;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    margin: 1rem;
+    bottom: 0.7rem;
+    left: 2.9rem;
+}
+
+#abouthim {
+    border: 1px solid rgb(240, 235, 227);
+    position: relative;
+    top: 7.5rem;
+    z-index: -1; 
+}
+
+.title {
+    font-size: 1.875rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.content p {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+hr{
+    color: rgb(228, 220, 207);
+    background-color: rgb(228, 220, 207);
+    width: 80%;
+}
+
+#abouthim .personal-information {
+    position: relative;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.personal-information {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.pinformation {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.name {
+    font-weight: bolder;
+    font-size: .81rem;
+}
+
+.value {
+    font-weight: lighter;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.value a {
+    text-decoration: none;
+    color: black;
+}
+
+#education {
+    border: 1px solid rgb(240, 235, 227);
+    position: relative;
+    top: 7.6rem;
+    z-index: -1;
+}
+
+.institution p{
+    font-size: 0.9rem;
+}
+
+.edcontent .institution {
+    margin-left: 3rem;
+}
+
+#skills {
+    border: 1px solid rgb(240, 235, 227);
+    position: relative;
+    top: 7.8rem;
+    z-index: -1;
+    width: 100%;
+    height: 17rem;
+}
+
+
+.skills_{
+    padding: 0.5rem;
+    width: 1.2rem;
+    height: auto;
+}
+
+.stars {
+    width: 1.5rem;
+    height: auto;
+}
+
+.rating .strpython {
+    position: absolute;
+    top: 5.5rem;
+    left: 10rem;
+}
+
+.rating .strjava{
+    position: absolute;
+    top: 8.2rem;
+    left: 10rem;
+}
+
+.rating .strhtml{
+    position: absolute;
+    top: 10.9rem;
+    left: 10rem;
+}
+
+.rating .strcss {
+    position: absolute;
+    top: 13.6rem;
+    left: 10rem;
+}
+
+.skills_ {
+    font-size: 1.2rem;
+}
+
+
+#skills .skcontent .skills_ {
+    position: absolute;
+    height: 5rem;
+    width: 10rem;
+    left: 2rem;
+    top: 4rem;
+}
+
+#objectives {
+    border: 1px solid rgb(240, 235, 227);
+    position: relative;
+    top: 8rem;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+ 
+#objectives .goals {
+    max-width: 800px;
+    margin: 50px 20px;
+}
+
+.goal {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.main, .secondary {
+    background-color: rgb(125, 157, 156);
+    width: 50%;
+}
+
+.goals li {
+    font-family: 'Inter',sans-serif;
+}
+
+/* RESPONSIVE */
+
+@media( min-width: 600px ) {
+ 
+    .nav a {
+        text-decoration: none;
+        margin-bottom: 1em;
+        margin-left: 3em;
+        margin-right: 0.2em;
+        margin-top: 1rem;
+        letter-spacing: .01em;
+        text-align: center;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        color: rgb(87, 111, 114);
+        
+    }
+
+    .profilepic img {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        left: 14rem;
+        top: 1rem;
+        border-radius: 50%;
+    }
+
+    .socmed img {
+        flex-wrap: wrap;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        margin: 1rem;
+        bottom: 0.5rem;
+        left: 8.5rem;
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 3em;
+        background-color: rgb(228, 220, 207);
+        top: 7em;
+        z-index: -1;
+    }    
+
+    .institution p{
+        font-size: 1rem;
+        padding-top: 0.2re;
+    }
+
+    .year p {
+        font-size: 0.5rem;
+    }
+    
+    .edcontent .institution {
+        margin-left: 7rem;
+    }
+
+    #objectives .goals {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .goal {
+        width: 30%;
+    }
+}
+
+@media( min-width: 768px ) {
+    .header {
+        background-color: rgb(240, 235, 227);
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        top:0%
+    }
+
+    .header p {
+        font-size: 2.5rem;
+        font-family: 'DM Serif Display', sans-serif;
+        color: rgb(87, 111, 114);
+        position: absolute;
+        top: 0.5rem;
+        left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 50%;
+        right: 3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.1rem;
+        letter-spacing: .01em;
+        text-align: center;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        color: rgb(87, 111, 114); 
+    }
+
+    .profilepic img {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        left: 18.5rem;
+        top: 1rem;
+        border-radius: 50%;
+    }
+    
+    .socmed img {
+        flex-wrap: wrap;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+        margin: 1.5rem;
+        bottom: 1rem;
+        left: 10rem;
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 3.5em;
+        background-color: rgb(228, 220, 207);
+        top: 7em;
+        z-index: -1;
+    } 
+}
+
+@media( min-width: 800px) {
+    .header {
+        background-color: rgb(240, 235, 227);
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top:0%
+    }
+
+    .header p {
+        font-size: 3rem;
+        font-family: 'DM Serif Display', sans-serif;
+        color: rgb(87, 111, 114);
+        position: absolute;
+        top: 0.5rem;
+        left: 8rem;
+        margin-top: 2rem;
+    }
+
+    .nav a {
+        text-decoration: none;
+        font-size: 1.9rem;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.1rem;
+        letter-spacing: .01em;
+        text-align: center;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        color: rgb(87, 111, 114); 
+    }
+
+    .profilepic {
+        position: sticky;
+        width: 22em;
+        height: 29em;
+        top: 7em; 
+        left: 7em;
+        background-color: rgb(125, 157, 156);
+        z-index: 0
+    }
+    
+    .profilepic img {
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        left: 3.25rem;
+        top: 2rem;
+        border-radius: 50%;
+    }
+    
+    .profilepic p {
+        text-align: center;
+        padding-top: 20rem;
+        font-size: 2rem;
+        color: rgb(43, 55, 56);
+    }
+    
+    .job {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(43, 55, 56); 
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .banner {
+        position: sticky;
+        width: 22em;
+        height: 5em;
+        left: 7em;
+        background-color: rgb(228, 220, 207);
+        top: 35rem;
+        z-index: 0;
+    }
+    .socmed {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute; 
+    }
+    
+    .socmed img {
+        flex-wrap: wrap;
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        margin: 0.5rem;
+        top: 0.5rem;
+        left: 1.1rem;
+    }
+
+    #abouthim {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -28rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #education {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -28rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #skills {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -27.9rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #objectives {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -27.7rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+}
+@media( min-width: 1366px) {
+    .header {
+        background-color: rgb(240, 235, 227);
+        position: fixed;
+        width: 100%;
+        height: 15%;
+        top:0%
+    }
+
+    .header p {
+        font-size: 3rem;
+        font-family: 'DM Serif Display', sans-serif;
+        color: rgb(87, 111, 114);
+        position: absolute;
+        top: 0.5rem;
+        left: 8rem;
+        margin-top: 2rem;
+    }
+
+    .nav a {
+        text-decoration: none;
+        font-size: 1.9rem;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.1rem;
+        letter-spacing: .01em;
+        text-align: center;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        color: rgb(87, 111, 114); 
+    }
+
+    .profilepic {
+        position: sticky;
+        width: 22em;
+        height: 29em;
+        top: 7em; 
+        left: 7em;
+        background-color: rgb(125, 157, 156);
+        z-index: 0
+    }
+    
+    .profilepic img {
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        left: 3.25rem;
+        top: 2rem;
+        border-radius: 50%;
+    }
+    
+    .profilepic p {
+        text-align: center;
+        padding-top: 20rem;
+        font-size: 2rem;
+        color: rgb(43, 55, 56);
+    }
+    
+    .job {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgb(43, 55, 56); 
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .banner {
+        position: sticky;
+        width: 22em;
+        height: 5em;
+        left: 7em;
+        background-color: rgb(228, 220, 207);
+        top: 35rem;
+        z-index: 0;
+    }
+    .socmed {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute; 
+    }
+    
+    .socmed img {
+        flex-wrap: wrap;
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        margin: 0.5rem;
+        top: 0.5rem;
+        left: 1.1rem;
+    }
+
+    #abouthim {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -28rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #education {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -28rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #skills {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -27.9rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+
+    #objectives {
+        border: 1px solid rgb(240, 235, 227);
+        position: relative;
+        top: -27.7rem;
+        z-index: -1; 
+        width: 50rem;
+        left: 35rem;
+    }
+}
